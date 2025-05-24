@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "tailwindcss-primeui";
+
+@theme {
+    --font-rouge-script: "Rouge Script", cursive; 
+}
+@theme {
+    --font-inspiration: "Inspiration", cursive; 
+}
+@theme {
+    --font-lexend: "Lexend", sans-serif;
+}
+@theme {
+    --font-ballet: "Ballet", cursive;
+}
+@theme {
+    --font-imperial-script: "Imperial Script", cursive;
+}
+@theme {
+    --font-mea-culpa: "Mea Culpa", cursive;
+}
+@theme {
+    --font-ephesis: "Ephesis", cursive;
+}
