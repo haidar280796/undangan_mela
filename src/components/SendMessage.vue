@@ -1,6 +1,5 @@
 <script setup>
 import logoMuamalat from './../assets/images/muamalat-logo.png'
-import logoBca from './../assets/images/bca-logo.png'
 import bgframe2 from './../assets/images/bgframe2.png'
 import flower from './../assets/images/flower3.png'
 import { Clock, MapPin, MessageSquareMore, RefreshCw, Send } from 'lucide-vue-next';
@@ -108,20 +107,11 @@ import { Clock, MapPin, MessageSquareMore, RefreshCw, Send } from 'lucide-vue-ne
             Anda dapat memberi kado secara cashless.</p>
 
         <div class="grid grid-cols-1 gap-10 mt-10 z-50">
-            <div class="flex flex-col gap-2 border-b-2 border-[#965A60] pb-4">
+            <div class="flex flex-col gap-2 pb-4">
                 <img :src="logoMuamalat" alt="Logo Muamalat" class="h-10 w-full object-contain">
                 <p
                 class="font-lexend text-center text-black text-base @min-sm:text-lg">
-                No: 122180120</p>
-                <p
-                class="font-lexend text-center text-black text-sm @min-sm:text-base">
-                Nama: Meilasari</p>
-            </div>
-            <div class="flex flex-col gap-2 border-b-2 border-[#965A60] pb-4 last:border-none">
-                <img :src="logoBca" alt="Logo Muamalat" class="h-10 w-full object-contain">
-                <p
-                class="font-lexend text-center text-black text-base @min-sm:text-lg">
-                No: 32132111</p>
+                No: 3560015521</p>
                 <p
                 class="font-lexend text-center text-black text-sm @min-sm:text-base">
                 Nama: Meilasari</p>
