@@ -8,6 +8,7 @@ import Couple from './components/Couple.vue';
 import Location from './components/Location.vue';
 import Footer from './components/Footer.vue';
 import SendMessage from './components/SendMessage.vue';
+import music from './assets/images/music.png'
 
 const showInvitation = ref(false);
 
@@ -20,7 +21,7 @@ const toggleInvitation = async () => {
   }
 }
 
-const audio = new Audio('/audio/lagu.mp3') // Ganti dengan path lagumu
+const audio = new Audio('/audio/music.mp3') // Ganti dengan path lagumu
 audio.loop = true // Agar lagu terus diputar berulang
 audio.volume = 0.8 // Atur volume sesuai keinginan
 
@@ -57,17 +58,17 @@ const scrollToInvitation = () => {
 <template>
   <Welcome :onToggleInvitation="toggleInvitation" />
   <div ref="invitationSection" v-if="showInvitation">
+    <Home />
+    <Countdown />
+    <Surat />
+    <Couple />
+    <Location />
+    <SendMessage />
+    <Footer />
     <button @click="toggleAudio"
-      class="fixed z-50 bottom-4 right-4 bg-[#7E8D7A] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
-      <span v-if="isPlaying">🔊</span>
-      <span v-else>🔇</span>
+      class="fixed z-50 bottom-4 right-4 bg-transparent text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+      <span v-if="isPlaying"><img :src="music" alt="Audio Icon" class="w-10 h-10 animate-spin"></span>
+      <span v-else><img :src="music" alt="Audio Icon" class="w-10 h-10"></span>
     </button>
   </div>
-  <Home />
-  <Countdown />
-  <Surat />
-  <Couple />
-  <Location />
-  <SendMessage />
-  <Footer />
 </template>

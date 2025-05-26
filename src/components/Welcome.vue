@@ -32,10 +32,10 @@ const handleClick = () => {
     class="@container relative bg-white w-full h-full min-h-screen max-w-screen-sm flex flex-col items-center justify-center mx-auto pb-6 overflow-hidden">
     
     <img :src="flower1" alt="Flower Top Left"
-            class="absolute top-6 -left-10 w-80 h-80 sm:w-96 sm:h-96 md:w-96 md:h-96 scale-y-[-1] z-20 rotate-20" />
+            class="absolute top-6 -left-10 w-80 h-80 sm:w-96 sm:h-96 md:w-96 md:h-96 scale-y-[-1] z-20 rotate-20 animate-flower-sway" />
     <!-- Flower Frame Top Left -->
     <img :src="flower1" alt="Flower Bottom Left"
-            class="absolute bottom-0 right-0 w-80 h-80 sm:w-96 sm:h-96 md:w-96 md:h-96 scale-x-[-1] z-20 rotate-20" />
+            class="absolute bottom-0 right-0 w-80 h-80 sm:w-96 sm:h-96 md:w-96 md:h-96 scale-x-[-1] z-20 rotate-20 animate-flower-sway"/>
     <!-- Flower Frame Bottom Right -->
 
     <img :src="bgframe1" alt="Frame Top Left"
@@ -51,7 +51,8 @@ const handleClick = () => {
             class="absolute bottom-0 right-0 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 scale-x-[-1] z-0" />
     <!-- Frame Bottom Right -->
 
-    <div class="relative w-full h-130 flex flex-col items-center justify-center z-50 mt-10 @sm:mt-0 @md:mt-24">
+    <div class="relative w-full h-130 flex flex-col items-center justify-center z-50 mt-10 @sm:mt-0 @md:mt-24" 
+    v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 zoom-in-50 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }">
       <img :src="frame1" alt="Frame" class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full object-contain scale-125 sm:scale-120 md:scale-125" />
       <div class="relative w-1/2 h-1/2 text-[#965A60] flex flex-col items-center justify-center gap-2 mx-auto">
         <p class="absolute top-0 @md:-top-4 font-rouge-script text-7xl @md:text-[7rem]"><span class="text-9xl @md:text-[10rem]">S</span>ave</p>
@@ -62,7 +63,8 @@ const handleClick = () => {
       
     </div>
 
-    <div class="bg-white px-6 py-6 rounded-lg mt-2 @sm:mt-2 @md:mt-20 @lg:mt-24 text-sm md:text-base text-center font-alice shadow-sm z-50">
+    <div class="bg-white px-6 py-6 rounded-lg mt-2 @sm:mt-2 @md:mt-20 @lg:mt-24 text-sm md:text-base text-center font-alice shadow-sm z-50"
+    v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-t-8 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }">
       <p class="text-sm md:text-base">Kepada Yth.Bapak/Ibu/Saudara/i</p>
       <p class="text-base md:text-xl mt-2">{{ capitalizeName(decodeURIComponent(guestName)) }}</p>
     </div>
@@ -77,4 +79,23 @@ const handleClick = () => {
 </template>
 
 <style scoped>
+/* Animasi floating */
+@layer utilities {
+    @keyframes flower-sway {
+
+        0%,
+        100% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(10deg);
+        }
+
+    }
+
+    .animate-flower-sway {
+        animation: flower-sway 4s ease-in-out infinite;
+    }
+}
 </style>

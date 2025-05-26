@@ -23,11 +23,12 @@ import frame from './../assets/images/frame2.png'
             class="absolute bottom-0 right-0 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 scale-x-[-1] z-0" />
     <!-- Frame Bottom Right -->
 
-    <div class="relative w-full flex flex-col items-center justify-center z-50">
+    <div class="relative w-full flex flex-col items-center justify-center z-50" v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 zoom-in-50 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }">
         <img :src="frame" alt="Frame"
                 class="w-full h-full scale-160 @min-md:scale-135" />
         <!-- Frame Center -->
-         <p class="absolute px-16 @min-sm:px-18 @min-md:px-32 font-lexend text-center text-xs @sm:text-sm @md:text-base text-[#E79F63] z-50">
+         <p class="absolute px-16 @min-sm:px-18 @min-md:px-32 font-lexend text-center text-xs @sm:text-sm @md:text-base text-[#E79F63] z-50"
+         v-animateonscroll="{ enterClass: 'animate-enter fade-in-10 slide-in-from-t-20 animate-duration-1000', leaveClass: 'animate-leave fade-out-0' }">
             Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
             <br>
             <br>
