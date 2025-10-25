@@ -42,12 +42,16 @@ Website undangan digital interaktif untuk acara pernikahan Mela & Rifal. Dibangu
 ---
 
 ## 📁 Project ini bisa jadi referensi untuk:
-✅ Sebagai undangan digital real untuk acara pernikahan
-✅ Contoh implementasi Vue 3 + Supabase dalam aplikasi real
-✅ Bisa dikembangkan menjadi produk digital (jualan undangan online)
+- Sebagai undangan digital real untuk acara pernikahan
+- Contoh implementasi Vue 3 + Supabase dalam aplikasi real
+- Bisa dikembangkan menjadi produk digital (jualan undangan online)
+
+---
 
 🤝 Kontak & Kolaborasi
 📌 GitHub: https://github.com/haidar280796
 📧 Email: inimailhaidar@gmail.com
+
+---
 
 ✨ “Terima kasih sudah mampir! Semoga project ini menginspirasi dan bermanfaat.” ✨
