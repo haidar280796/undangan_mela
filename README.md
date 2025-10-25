@@ -1,6 +1,6 @@
-# 🕊️ Undangan Digital – Mela & Rifal
+# 🕊️ Undangan Digital – Mela & Hafif
 
-Website undangan digital interaktif untuk acara pernikahan Mela & Rifal. Dibangun dengan desain elegan, responsif, dan modern menggunakan Laravel & Vue.js. Proyek ini juga dijadikan sebagai portofolio pengembangan website undangan digital.
+Website undangan digital interaktif untuk acara pernikahan Mela & Hafif. Dibangun dengan desain elegan, responsif, dan modern menggunakan Laravel & Vue.js. Proyek ini juga dijadikan sebagai portofolio pengembangan website undangan digital.
 
 ---
 
