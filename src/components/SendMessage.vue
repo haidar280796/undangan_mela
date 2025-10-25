@@ -227,7 +227,7 @@ const copyClipboard = async () => {
                 <img :src="logoMuamalat" alt="Logo Muamalat" class="h-10 w-full object-contain">
                 <p
                 class="font-lexend text-center text-black text-base @min-sm:text-lg">
-                Rekening: 3560015521</p>
+                Rekening: 35xxxxxx</p>
                 <p
                 class="font-lexend text-center text-black text-sm @min-sm:text-base">
                 Meilasari</p>
